@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scryn"
+version = "0.1.0"
+description = "Identity intelligence & OSINT analyzer from public sources."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "White" }]
+dependencies = [
+    "fastapi>=0.110",
+    "uvicorn[standard]>=0.29",
+    "httpx>=0.27",
+    "pydantic>=2.6",
+    "networkx>=3.2",
+    "phonenumbers>=8.13",
+    "dnspython>=2.6",
+    "python-whois>=0.9.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+scryn = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli"]
+packages = ["app", "app.api", "app.core", "app.sources"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not network'"
+markers = ["network: hits live third-party services (deselected by default)"]
