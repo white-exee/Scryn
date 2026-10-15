@@ -88,7 +88,7 @@ def print_map(data: dict) -> None:
 
 def print_report(data: dict) -> None:
     print(f"{G}{BANNER}{X}")
-    print(f"{B}scryn{X} {D}v0.1 — identity recon · public sources only{X}\n")
+    print(f"{B}scryn{X} {D}v0.1 · by {X}{G}white{X}{D} · github.com/white-exee{X}\n")
 
     if data.get("error"):
         print(f"{R}[!] {data['error']}{X}")

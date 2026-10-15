@@ -56,7 +56,7 @@ _PAGE = """<!DOCTYPE html>
 \\__ \\ (__| |  | |_| | | | |
 |___/\\___|_|   \\__, |_| |_|
                |___/</pre>
-    <div class="sub"><b>scryn</b> v0.1 &mdash; identity recon &middot; public sources only &middot; <span id="srccount">80</span> sources &middot; theme <span id="sw"></span></div>
+    <div class="sub"><b>scryn</b> v0.1 &middot; by <a href="https://github.com/white-exee" target="_blank" rel="noopener">white</a> &middot; <span id="srccount">80</span> sources &middot; theme <span id="sw"></span></div>
   </header>
 
   <div id="tty"></div>

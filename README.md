@@ -127,3 +127,7 @@ pytest -m network      # live run, checks there are no false positives
 ## License
 
 MIT.
+
+---
+
+Built by **White** · [github.com/white-exee](https://github.com/white-exee)
