@@ -1,0 +1,27 @@
+<svg width="100%" viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="scryn - OSINT recon">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c0f0e"/>
+      <stop offset="1" stop-color="#070908"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="4" fill="none"/>
+      <rect width="4" height="1" y="1.5" fill="#39f08a" opacity="0.05"/>
+    </pattern>
+  </defs>
+
+  <rect x="1" y="1" width="818" height="198" rx="16" fill="url(#bg)" stroke="#173a2a"/>
+  <rect x="1" y="1" width="818" height="198" rx="16" fill="url(#scan)"/>
+  <rect x="1" y="1" width="818" height="3" rx="1.5" fill="#39f08a" opacity="0.5"/>
+
+  <g font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace">
+    <text x="52" y="116" font-size="92" font-weight="700" letter-spacing="3" fill="#39f08a" filter="url(#glow)">
+      <tspan fill="#39f08a" opacity="0.55">&#10095; </tspan>scryn<tspan fill="#39f08a" opacity="0.5">_</tspan>
+    </text>
+    <text x="56" y="156" font-size="18" letter-spacing="4" fill="#6f7a74">osint recon &#183; 80+ sources &#183; zero false positives</text>
+  </g>
+</svg>

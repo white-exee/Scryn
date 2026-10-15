@@ -1,12 +1,6 @@
 <div align="center">
 
-<pre>
- ___  ___ _ __ _   _ _ __
-/ __|/ __| '__| | | | '_ \
-\__ \ (__| |  | |_| | | | |
-|___/\___|_|   \__, |_| |_|
-               |___/
-</pre>
+<img src="docs/banner.svg" alt="scryn" width="760">
 
 **OSINT recon from a single identifier: username, email, phone or domain.**
 
