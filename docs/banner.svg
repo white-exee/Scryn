@@ -1,27 +1,37 @@
-<svg width="100%" viewBox="0 0 820 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="scryn - OSINT recon">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#0c0f0e"/>
-      <stop offset="1" stop-color="#070908"/>
-    </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-      <rect width="4" height="4" fill="none"/>
-      <rect width="4" height="1" y="1.5" fill="#39f08a" opacity="0.05"/>
-    </pattern>
-  </defs>
+<svg width="100%" viewBox="0 0 760 190" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="scryn - OSINT recon">
+  <rect width="760" height="190" rx="14" fill="#0d1117"/>
 
-  <rect x="1" y="1" width="818" height="198" rx="16" fill="url(#bg)" stroke="#173a2a"/>
-  <rect x="1" y="1" width="818" height="198" rx="16" fill="url(#scan)"/>
-  <rect x="1" y="1" width="818" height="3" rx="1.5" fill="#39f08a" opacity="0.5"/>
+  <text x="380" y="100" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="80" font-weight="800" letter-spacing="-1" fill="#ffffff">scryn</text>
 
-  <g font-family="ui-monospace, 'JetBrains Mono', 'SFMono-Regular', Menlo, Consolas, monospace">
-    <text x="52" y="116" font-size="92" font-weight="700" letter-spacing="3" fill="#39f08a" filter="url(#glow)">
-      <tspan fill="#39f08a" opacity="0.55">&#10095; </tspan>scryn<tspan fill="#39f08a" opacity="0.5">_</tspan>
-    </text>
-    <text x="56" y="156" font-size="18" letter-spacing="4" fill="#6f7a74">osint recon &#183; 80+ sources &#183; zero false positives</text>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="15" fill="#c9d1d9">
+    <g transform="translate(176,140)">
+      <g stroke="#8b949e" stroke-width="1.7" fill="none" stroke-linecap="round">
+        <circle cx="6" cy="0" r="5.5"/>
+        <line x1="10" y1="4" x2="14.5" y2="8.5"/>
+      </g>
+      <text x="25" y="5">OSINT recon</text>
+    </g>
+
+    <text x="300" y="145" fill="#2f3741">|</text>
+
+    <g transform="translate(320,140)">
+      <g stroke="#8b949e" stroke-width="1.7" fill="none">
+        <circle cx="7" cy="0" r="6.5"/>
+        <line x1="0.5" y1="0" x2="13.5" y2="0"/>
+        <ellipse cx="7" cy="0" rx="3.2" ry="6.5"/>
+      </g>
+      <text x="25" y="5">80+ sources</text>
+    </g>
+
+    <text x="438" y="145" fill="#2f3741">|</text>
+
+    <g transform="translate(458,140)">
+      <g stroke="#8b949e" stroke-width="1.7" fill="none" stroke-linecap="round">
+        <line x1="1.5" y1="7" x2="1.5" y2="3"/>
+        <line x1="7" y1="7" x2="7" y2="-1"/>
+        <line x1="12.5" y1="7" x2="12.5" y2="-5"/>
+      </g>
+      <text x="24" y="5">correlation graph</text>
+    </g>
   </g>
 </svg>
